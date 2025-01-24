@@ -6,7 +6,7 @@ fn draw_line(x1, y1, x2, y2, cell_type) {
     let mut_err = dx - dy;
     let mut_x = x1;
     let mut_y = y1;
-    let max_iterations = max(dx, dy) + 1; // Ensure the loop terminates by limiting iterations
+    let max_iterations = max(dx.to_int(), dy.to_int()) + 1; // Ensure the loop terminates by limiting iterations
     for _ in 0..max_iterations {
         set_cell(mut_x.to_int(), mut_y.to_int(), cell_type);
         if mut_x == x2 && mut_y == y2 { break; }
