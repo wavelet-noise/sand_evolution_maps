@@ -7,7 +7,7 @@ fn draw_line(x1, y1, x2, y2, cell_type) {
     let mut_x = x1;
     let mut_y = y1;
     let max_iterations = max(dx.to_int(), dy.to_int()) + 1; // Ensure the loop terminates by limiting iterations
-    for _ in 0..max_iterations {
+    for i in 0..max_iterations {
         set_cell(mut_x.to_int(), mut_y.to_int(), cell_type);
         if mut_x == x2 && mut_y == y2 { break; }
         let e2 = 2 * mut_err;
@@ -25,8 +25,8 @@ fn draw_line(x1, y1, x2, y2, cell_type) {
 fn rotate_point(x, y, angle) {
     let s = sin(angle);
     let c = cos(angle);
-    let nx = (c * x - s * y) + cx;
-    let ny = (s * x + c * y) + cy;
+    let nx = c * x - s * y;
+    let ny = s * x + c * y;
     [nx, ny]
 }
 
