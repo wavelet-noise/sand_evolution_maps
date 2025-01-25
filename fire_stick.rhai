@@ -78,10 +78,11 @@ let type = 4;
 let v1 = [50.0,50.0];
 let v2 = [75.0,100.0];
 
-
-for i in 0..20{
-let off = [50*i,200];
-
-line(add_point(rotate_point(v1, time + i), off), add_point(rotate_point(v2, time + i) ,off), type);
-
+if tick%5 == 0 {
+    for i in 0..20 {
+    let off = [50*i,200];
+    
+        line(add_point(rotate_point(v1, time + i), off), add_point(rotate_point(v2, time + i) ,off), type);
+    
+    }
 }
