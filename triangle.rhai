@@ -40,13 +40,13 @@ fn add_point(v1, v2) {
   [v1[0] + v2[0], v1[1] + v2[1]]
 }
 
-let x = rand()%1000 + 100;
-let y = rand()%1000 + 100;
-let cx = x + 59;
-let cy = y + 59;
-let cx2 = x - 59;
-let cy2 = y +59;
-let off = [50,50];
+let x = rand()%1024;
+let y = rand()%512;
+let size = 25 + rand()%75;
+let cx = x + size;
+let cy = y + size;
+let cx2 = x - size;
+let cy2 = y + size;
 
 let rand = rand()%100/100.0;
 
@@ -54,4 +54,4 @@ let v1 = rotate_point(x,y,rand);
 let v2 = rotate_point(cx,cy,rand);
 let v3 = rotate_point(cx2,cy2,rand);
 
-spawn_wireframe_triangle(add_point(v1,off), add_point(v2,off), add_point(v3,off), 60);
+spawn_wireframe_triangle(v1, v2, v3, 60);
