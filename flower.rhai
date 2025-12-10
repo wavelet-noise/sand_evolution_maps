@@ -87,9 +87,9 @@ fn draw_rays(cx, cy, inner_r, outer_r, count, cell_type, time) {
 
 fn spawn_flower_pattern(cx, cy, cell_type, time) {
     draw_flower(cx, cy, 70.0, 6, cell_type,     time, 1.2);
-    draw_flower(cx, cy, 40.0, 9, cell_type + 1, time, 2.0);
-    draw_flower(cx, cy, 95.0, 4, cell_type + 2, time, 0.7);
-    draw_rays(cx, cy, 25.0, 110.0, 18, cell_type + 3, time);
+    draw_flower(cx, cy, 40.0, 9, cell_type + 1, time*2, 2.0);
+    draw_flower(cx, cy, 95.0, 4, cell_type + 2, -time, 0.7);
+    draw_rays(cx, cy, 25.0, 30.0, 18, cell_type + 3, -time/2);
 }
 
 
