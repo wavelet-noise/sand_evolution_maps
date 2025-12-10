@@ -1,4 +1,4 @@
-// -------- LINE DRAW (BRESENHAM) --------
+// ---- Line draw (Bresenham) ----
 
 fn draw_line(x1, y1, x2, y2, cell_type) {
     let dx = abs(x2 - x1);
@@ -8,7 +8,7 @@ fn draw_line(x1, y1, x2, y2, cell_type) {
     let mut_err = dx - dy;
     let mut_x = x1;
     let mut_y = y1;
-    let max_iterations = (max(dx, dy) + 1).to_int(); 
+    let max_iterations = (max(dx, dy) + 1).to_int();
 
     for i in 0..max_iterations {
         set_cell(mut_x.to_int(), mut_y.to_int(), cell_type);
@@ -30,8 +30,7 @@ fn draw_line(x1, y1, x2, y2, cell_type) {
 }
 
 
-
-// -------- FLOWER SHAPE --------
+// ---- Flower shape ----
 
 fn draw_flower(cx, cy, base_r, petals, cell_type, time, speed) {
     let PI = 3.14159265;
@@ -42,10 +41,10 @@ fn draw_flower(cx, cy, base_r, petals, cell_type, time, speed) {
     let has_prev = false;
 
     for i in 0..steps {
-        let t = i as float / steps as float;
+        let t = i.to_float() / steps.to_float();
         let ang = t * 2.0 * PI;
 
-        let r = base_r * (0.6 + 0.3 * sin(petals as float * ang + time * speed));
+        let r = base_r * (0.6 + 0.3 * sin(petals.to_float() * ang + time * speed));
 
         let x = cx + r * cos(ang);
         let y = cy + r * sin(ang);
@@ -61,17 +60,16 @@ fn draw_flower(cx, cy, base_r, petals, cell_type, time, speed) {
 }
 
 
-
-// -------- RAYS --------
+// ---- Rays around flower ----
 
 fn draw_rays(cx, cy, inner_r, outer_r, count, cell_type, time) {
     let PI = 3.14159265;
 
     for i in 0..count {
-        let t = i as float / count as float;
+        let t = i.to_float() / count.to_float();
         let ang = t * 2.0 * PI + time * 0.5;
 
-        let wobble = 1.0 + 0.15 * sin(time * 1.3 + i as float * 0.7);
+        let wobble = 1.0 + 0.15 * sin(time * 1.3 + i.to_float() * 0.7);
         let r1 = inner_r * wobble;
         let r2 = outer_r * wobble;
 
@@ -85,8 +83,7 @@ fn draw_rays(cx, cy, inner_r, outer_r, count, cell_type, time) {
 }
 
 
-
-// -------- MAIN PATTERN --------
+// ---- Main pattern ----
 
 fn spawn_flower_pattern(cx, cy, cell_type, time) {
     draw_flower(cx, cy, 70.0, 6, cell_type,     time, 1.2);
@@ -95,8 +92,5 @@ fn spawn_flower_pattern(cx, cy, cell_type, time) {
     draw_rays(cx, cy, 25.0, 110.0, 18, cell_type + 3, time);
 }
 
-
-
-// -------- CALL --------
 
 spawn_flower_pattern(150.0, 150.0, 60, time);
