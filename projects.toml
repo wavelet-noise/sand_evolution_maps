@@ -28,13 +28,13 @@ image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps
 id = "laser_waves"
 display_name = "laser_waves"
 script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/laser_waves.rhai"
-image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/void_bottom.png"
 
 [[project]]
 id = "segmented_sin"
 display_name = "segmented_sin"
 script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/segmented_sin.rhai"
-image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/void_bottom.png"
 
 [[project]]
 id = "triangle"
