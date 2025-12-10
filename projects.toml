@@ -1,0 +1,73 @@
+# projects.toml
+# Format:
+# [[project]]
+# id          = "name"
+# display_name = "label"
+# script_url  = ".rhai URL"
+# image_url   = "png URL"
+
+[[project]]
+id = "cube_script.rhai"
+display_name = "cube_script"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/cube_script.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "fire_stick.rhai"
+display_name = "fire_stick"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/fire_stick.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "galaxy.rhai"
+display_name = "galaxy"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/galaxy.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "laser_waves"
+display_name = "laser_waves"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/laser_waves.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "segmented_sin"
+display_name = "segmented_sin"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/segmented_sin.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "triangle"
+display_name = "triangle"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/triangle.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "triangle2"
+display_name = "triangle2"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/triangle2.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "triangle3"
+display_name = "triangle3"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/triangle3.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "zeus1"
+display_name = "zeus1"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/zeus1.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "zeus2"
+display_name = "zeus2"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/zeus2.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "zeus_cgmath.rhai"
+display_name = "zeus_cgmath"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/zeus_cgmath.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
