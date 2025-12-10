@@ -13,6 +13,12 @@ script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_map
 image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
 
 [[project]]
+id = "flower_script"
+display_name = "flower_script"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/flower.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
 id = "fire_stick"
 display_name = "fire_stick"
 script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/fire_stick.rhai"
