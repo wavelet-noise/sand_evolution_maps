@@ -7,19 +7,19 @@
 # image_url   = "png URL"
 
 [[project]]
-id = "cube_script.rhai"
+id = "cube_script"
 display_name = "cube_script"
 script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/cube_script.rhai"
 image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
 
 [[project]]
-id = "fire_stick.rhai"
+id = "fire_stick"
 display_name = "fire_stick"
 script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/fire_stick.rhai"
 image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
 
 [[project]]
-id = "galaxy.rhai"
+id = "galaxy"
 display_name = "galaxy"
 script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/galaxy.rhai"
 image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
