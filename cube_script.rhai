@@ -74,7 +74,7 @@ fn rotate_z(p, a) {
 // =========================
 
 fn project_point(p, cx, cy, scale) {
-    let depth = 50.0;
+    let depth = 100.0;
     let factor = scale / (p[2] + depth);
     [
         p[0] * factor + cx,
