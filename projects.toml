@@ -7,6 +7,12 @@
 # image_url   = "png URL"
 
 [[project]]
+id = "sand_and_soil"
+display_name = "sand_and_soil"
+script_url = ""
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/sand_and_soil.png"
+
+[[project]]
 id = "cube_script"
 display_name = "cube_script"
 script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/cube_script.rhai"
