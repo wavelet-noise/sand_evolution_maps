@@ -83,3 +83,15 @@ id = "zeus_cgmath.rhai"
 display_name = "zeus_cgmath"
 script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/zeus_cgmath.rhai"
 image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "polar_animation"
+display_name = "polar_animation"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/polar_animation.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "electric_circle"
+display_name = "electric_circle"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/electric_circle.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
