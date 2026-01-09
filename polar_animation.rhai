@@ -1,4 +1,4 @@
-if tick % 2 != 0 { return }
+if tick % 3 != 0 { return }
 
 let cx = GRID_WIDTH.to_float() / 2.0;
 let cy = GRID_HEIGHT.to_float() / 2.0;
