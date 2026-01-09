@@ -25,8 +25,8 @@ fn draw_line(x1, y1, x2, y2, cell_type) {
 if tick % 2 != 0 { return }
 
 for j in 0..10 {
-    let width = 1024.0;
-    let height = 768.0;
+    let width = GRID_WIDTH.to_float();
+    let height = GRID_HEIGHT.to_float();
     let center_x = width / 2.0;
     let center_y = height / 2.0;
     let amplitude = 50.0;
