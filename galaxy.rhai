@@ -52,7 +52,7 @@ fn random_offset(off) {
 fn rotate_point(v, angle) {
   let s = sin(angle);
   let c = cos(angle);
-  [v[0]*c - v[0]*s, v[0]*s + v[1]*c]
+  [v[0]*c - v[1]*s, v[0]*s + v[1]*c]
 }
 
 fn fract(v1) { v1 - v1.to_int() }
