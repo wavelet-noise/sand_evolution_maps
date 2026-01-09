@@ -128,8 +128,10 @@ fn spawn_wireframe_cube_3d(cx, cy, size, cell_type, time) {
     ];
 
     for e in edges {
-        let a = projected[e[0]];
-        let b = projected[e[1]];
+        let idx1 = e[0].to_int();
+        let idx2 = e[1].to_int();
+        let a = projected[idx1];
+        let b = projected[idx2];
         draw_line(a[0], a[1], b[0], b[1], cell_type);
     }
 }
