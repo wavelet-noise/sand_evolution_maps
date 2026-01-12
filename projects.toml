@@ -95,3 +95,9 @@ id = "electric_circle"
 display_name = "electric_circle"
 script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/electric_circle.rhai"
 image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"
+
+[[project]]
+id = "cube_grid"
+display_name = "cube_grid"
+script_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/cube_grid.rhai"
+image_url = "https://raw.githubusercontent.com/wavelet-noise/sand_evolution_maps/main/empty.png"

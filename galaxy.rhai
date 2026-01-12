@@ -73,11 +73,16 @@ fn split_and_render(v1, v2, type, iterations) {
 }
 
 let type = 61;
+let center_x = GRID_WIDTH.to_float() / 2.0;
+let center_y = GRID_HEIGHT.to_float() / 2.0;
 
 for i in 0..50 {
-let v = [4*i*(sin(i.to_float()+2.32+sin(time)*0.1)),1*i];
-
-v = add_point(rotate_point(v, time - i), [512.0,256.0]);
-
-set_cell(v[0].to_int(), v[1].to_int(), type)
+    let v = [4.0*i.to_float()*(sin(i.to_float()+2.32+sin(time)*0.1)), i.to_float()];
+    let rotated = rotate_point(v, time - i.to_float());
+    let final_v = add_point(rotated, [center_x, center_y]);
+    let x = final_v[0].to_int();
+    let y = final_v[1].to_int();
+    if x >= 0 && x < GRID_WIDTH && y >= 0 && y < GRID_HEIGHT {
+        set_cell(x, y, type);
+    }
 }

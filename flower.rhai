@@ -93,4 +93,4 @@ fn spawn_flower_pattern(cx, cy, cell_type, time) {
 }
 
 
-spawn_flower_pattern(150.0, 150.0, 60, time);
+spawn_flower_pattern(GRID_WIDTH.to_float() / 2.0, GRID_HEIGHT.to_float() / 2.0, 60, time);
