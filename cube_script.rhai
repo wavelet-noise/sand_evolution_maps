@@ -109,11 +109,10 @@ fn spawn_wireframe_cube_3d(cx, cy, size, cell_type, time) {
 
     let rotated = [];
     for v in verts {
-        let p = v;
-        p = rotate_x(p, ax);
-        p = rotate_y(p, ay);
-        p = rotate_z(p, az);
-        rotated.push(p);
+        let p1 = rotate_x(v, ax);
+        let p2 = rotate_y(p1, ay);
+        let p3 = rotate_z(p2, az);
+        rotated.push(p3);
     }
 
     let projected = [];
@@ -142,4 +141,6 @@ fn spawn_wireframe_cube_3d(cx, cy, size, cell_type, time) {
 // CALL
 // =========================
 
-spawn_wireframe_cube_3d(150, 150, 80, 60, time);
+let cx = GRID_WIDTH.to_float() / 2.0;
+let cy = GRID_HEIGHT.to_float() / 2.0;
+spawn_wireframe_cube_3d(cx, cy, 80.0, 60, time);
