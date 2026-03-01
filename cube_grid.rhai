@@ -1,5 +1,3 @@
-if tick % 3 != 0 { return }
-
 fn draw_line(x1, y1, x2, y2, cell_type) {
     let dx = abs(x2 - x1);
     let dy = abs(y2 - y1);
